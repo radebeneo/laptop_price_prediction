@@ -31,7 +31,6 @@ if prediction:
     x1 = pd.DataFrame([[processor_speed, ram_size, storage_capacity]], columns=["Processor_Speed", "RAM_Size", "Storage_Capacity"])
     prediction_val = model.predict(x1)[0]
     st.warning(f"Price estimate for your laptop is {prediction_val:,.2f}")
-    st.write(f"Price estimate for your laptop is {prediction_val:,.2f}")
 
 else:
     st.write("Click button to get your price estimate")
